@@ -92,8 +92,11 @@ export default function App() {
       <header className="site-header">
         <div className="container header-inner">
           <a className="brand" href="#inicio" aria-label="LGI Engenharia">
-            <strong>LGI Engenharia</strong>
-            <span>Avaliações • Engenharia • Obras</span>
+            <img src="/logo-lgi.png" alt="LGI Engenharia" />
+            <div>
+              <strong>LGI Engenharia</strong>
+              <span>Avaliações • Engenharia • Obras</span>
+            </div>
           </a>
 
           <nav className="desktop-nav">
@@ -150,6 +153,9 @@ export default function App() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <Card className="authority-card">
+              <div className="authority-logo">
+                <img src="/logo-lgi.png" alt="LGI Engenharia" />
+              </div>
               <div className="authority-top">
                 <FileText size={42} />
                 <span>LGI Engenharia de Avaliações</span>
@@ -201,6 +207,7 @@ export default function App() {
       <section id="sobre" className="about-section">
         <div className="container about-grid">
           <div className="about-panel">
+            <img src="/logo-lgi.png" alt="LGI Engenharia" />
             <span>Desde 2003</span>
             <h2>LGI Engenharia de Avaliações</h2>
             <p>
