@@ -16,7 +16,7 @@ import {
   Menu,
 } from "lucide-react";
 
-const whatsappNumber = "5588992726162";
+const whatsappNumber = "5585992726162";
 const email = "lgi@lgiengenharia.com";
 
 const services = [
@@ -307,7 +307,7 @@ export default function App() {
             >
               <div>
                 <Phone size={21} />
-                <strong>(88) 99272-6162</strong>
+                <strong>(85) 99272-6162</strong>
               </div>
               <ArrowRight size={17} />
             </a>
