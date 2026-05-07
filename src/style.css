@@ -1,13 +1,13 @@
 :root {
-  --bg: #f7f5f0;
+  --bg: #f7f8fb;
   --paper: #ffffff;
-  --ink: #0f172a;
+  --ink: #061635;
   --muted: #5f6b7a;
-  --line: #e5e0d8;
-  --green: #063f33;
-  --green-2: #0b5a47;
-  --green-soft: #e8f1ed;
-  --dark: #07111f;
+  --line: #e3e8f1;
+  --blue: #001d4d;
+  --blue-2: #082d6f;
+  --blue-soft: #eaf0fb;
+  --dark: #06132c;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -45,7 +45,7 @@ main {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-  background: rgba(247, 245, 240, 0.88);
+  background: rgba(247, 248, 251, 0.88);
   backdrop-filter: blur(18px);
 }
 
@@ -59,6 +59,21 @@ main {
 
 .brand {
   display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 29, 77, 0.08);
+}
+
+.brand div {
+  display: flex;
   flex-direction: column;
   gap: 3px;
 }
@@ -66,11 +81,11 @@ main {
 .brand strong {
   font-size: 21px;
   letter-spacing: -0.04em;
-  color: #09111f;
+  color: var(--blue);
 }
 
 .brand span {
-  color: var(--green);
+  color: var(--blue);
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -85,7 +100,7 @@ main {
 }
 
 .desktop-nav a:hover {
-  color: var(--green);
+  color: var(--blue);
 }
 
 .mobile-menu {
@@ -109,12 +124,12 @@ main {
 
 .button-primary {
   color: white;
-  background: var(--green);
-  box-shadow: 0 14px 35px rgba(6, 63, 51, 0.18);
+  background: var(--blue);
+  box-shadow: 0 14px 35px rgba(0, 29, 77, 0.18);
 }
 
 .button-primary:hover {
-  background: var(--green-2);
+  background: var(--blue-2);
   transform: translateY(-1px);
 }
 
@@ -138,7 +153,7 @@ main {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(6, 63, 51, 0.16), transparent 33%),
+    radial-gradient(circle at top right, rgba(0, 29, 77, 0.16), transparent 33%),
     linear-gradient(135deg, rgba(255,255,255,0.94), rgba(247,245,240,1));
 }
 
@@ -156,11 +171,11 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  border: 1px solid rgba(6, 63, 51, 0.18);
+  border: 1px solid rgba(0, 29, 77, 0.18);
   background: white;
   border-radius: 999px;
   padding: 9px 15px;
-  color: var(--green);
+  color: var(--blue);
   font-weight: 800;
   font-size: 14px;
   box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
@@ -201,10 +216,26 @@ h1 {
   color: white;
   padding: 38px;
   border-radius: 34px;
-  min-height: 500px;
+  min-height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.authority-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.authority-logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background: white;
+  border-radius: 28px;
+  padding: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
 }
 
 .authority-top {
@@ -216,7 +247,7 @@ h1 {
 }
 
 .authority-top svg {
-  color: #86efac;
+  color: #b8cdfa;
 }
 
 .authority-top span {
@@ -236,7 +267,7 @@ h1 {
 
 .authority-label {
   font-size: 22px;
-  color: #bbf7d0;
+  color: #c6d7ff;
   margin: 12px 0 34px;
 }
 
@@ -260,7 +291,7 @@ h1 {
 .authority-list svg,
 .legal-list svg {
   flex: 0 0 auto;
-  color: #86efac;
+  color: #b8cdfa;
   margin-top: 2px;
 }
 
@@ -277,7 +308,7 @@ h1 {
 .contact-box span,
 .legal-section span {
   display: inline-block;
-  color: var(--green);
+  color: var(--blue);
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 13px;
@@ -324,7 +355,7 @@ h1 {
 .icon-box {
   width: 54px;
   height: 54px;
-  background: var(--green);
+  background: var(--blue);
   color: white;
   border-radius: 18px;
   display: grid;
@@ -359,19 +390,30 @@ h1 {
 }
 
 .about-panel {
-  background: var(--green);
+  background: var(--blue);
   color: white;
   border-radius: 34px;
   padding: 40px;
-  min-height: 380px;
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 24px 60px rgba(6, 63, 51, 0.25);
+  box-shadow: 0 24px 60px rgba(0, 29, 77, 0.25);
+}
+
+.about-panel img {
+  width: 145px;
+  height: 145px;
+  object-fit: contain;
+  background: white;
+  border-radius: 28px;
+  padding: 14px;
+  margin-bottom: 26px;
+  box-shadow: 0 16px 35px rgba(0,0,0,0.2);
 }
 
 .about-panel span {
-  color: #bbf7d0;
+  color: #c6d7ff;
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 13px;
@@ -394,7 +436,7 @@ h1 {
 }
 
 .strength-grid svg {
-  color: var(--green);
+  color: var(--blue);
   flex: 0 0 auto;
   margin-top: 2px;
 }
@@ -406,7 +448,7 @@ h1 {
 }
 
 .audience-card svg {
-  color: var(--green);
+  color: var(--blue);
   margin-bottom: 24px;
 }
 
@@ -417,7 +459,7 @@ h1 {
 }
 
 .legal-section span {
-  color: #86efac;
+  color: #b8cdfa;
 }
 
 .legal-section p {
@@ -494,13 +536,13 @@ h1 {
 
 .contact-links svg,
 .location-row svg {
-  color: var(--green);
+  color: var(--blue);
   flex: 0 0 auto;
 }
 
 footer {
   border-top: 1px solid rgba(15, 23, 42, 0.08);
-  background: #efede7;
+  background: #eef2f8;
   padding: 30px 0;
 }
 
@@ -552,12 +594,18 @@ footer {
     min-height: 70px;
   }
 
+  .brand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
   .brand strong {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .brand span {
-    font-size: 9px;
+    display: none;
   }
 
   h1 {
@@ -593,6 +641,12 @@ footer {
   .contact-box {
     padding: 28px;
     border-radius: 26px;
+  }
+
+  .authority-logo img,
+  .about-panel img {
+    width: 120px;
+    height: 120px;
   }
 
   .footer-inner {
